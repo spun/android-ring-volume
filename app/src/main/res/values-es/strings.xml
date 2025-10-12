@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ring Volume</string>
+    <string name="home_title">Volumen de llamadas</string>
+    <string name="home_permission_title">Permiso necesario</string>
+    <string name="home_permission_text">La aplicación necesita acceso a los ajustes de No molestar para silenciar o activar el sonido.\n\nVe a los ajustes y activa la opción \"Ring Volume\".</string>
+    <string name="home_permission_button">Abrir ajustes</string>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ring Volume</string>
+    <string name="home_title">Ring volume</string>
+    <string name="home_permission_title">Permission required</string>
+    <string name="home_permission_text">The app needs access to the Do Not Disturb settings to mute/unmute.\n\nGo to settings and toggle \"Ring Volume\" ON.</string>
+    <string name="home_permission_button">Open settings</string>
+</resources>
