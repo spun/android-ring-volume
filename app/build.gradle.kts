@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.compose.compiler)
@@ -71,8 +73,10 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
-    kotlinOptions {
-        jvmTarget = "1.8"
+    kotlin {
+        compilerOptions {
+            jvmTarget = JvmTarget.JVM_1_8
+        }
     }
     packaging {
         resources {
@@ -94,6 +98,13 @@ dependencies {
     // Hilt
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
+    // After updating to Kotlin 2.3.0, we got this error when running the app:
+    //     [Hilt] Provided Metadata instance has version 2.3.0, while maximum supported version is 2.2.0.
+    // Reports in the Dagger repository were closed saying that this was not something they should fix.
+    // To fix it ourselves, we need to add the dependency with the correct version manually.
+    // NOTE: We are not moving this to libs.versions.toml to make it clear that this is a temp fix and
+    //  that we should try to remove this line in the future to check if they changed their mind.
+    ksp("org.jetbrains.kotlin:kotlin-metadata-jvm:${libs.versions.kotlin.get()}")
     // Hilt + AndroidX
     implementation(libs.androidx.hilt.lifecycle.viewmodel.compose)
     // Navigation 3
