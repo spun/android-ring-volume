@@ -13,7 +13,6 @@ updates:
         patterns:
           - "org.jetbrains.kotlin:*"
           - "org.jetbrains.kotlin.*"
-          - "com.google.devtools.ksp"
       # Group remaining updates
       updates:
         patterns: [ "*" ]
