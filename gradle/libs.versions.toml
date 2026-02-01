@@ -1,16 +1,16 @@
 [versions]
-androidGradlePlugin = "8.13.2"
-androidxActivity = "1.12.2"
-androidxCompose = "1.11.0-alpha02"
-androidxComposeMaterial3 = "1.5.0-alpha11"
+androidGradlePlugin = "9.0.0"
+androidxActivity = "1.12.3"
+androidxCompose = "1.11.0-alpha04"
+androidxComposeMaterial3 = "1.5.0-alpha13"
 androidxHilt = "1.3.0"
 androidxLifecycle = "2.10.0"
 androidxNavigation3 = "1.0.0"
-androidxWork = "2.11.0"
+androidxWork = "2.11.1"
 androidxTestExt = "1.3.0"
-hilt = "2.57.2"
+hilt = "2.59"
 kotlin = "2.3.0"
-kotlinxSerialization = "1.9.0"
+kotlinxSerialization = "1.10.0"
 ksp = "2.3.5"
 
 [libraries]
@@ -34,7 +34,6 @@ androidx-test-ext = { group = "androidx.test.ext", name = "junit-ktx", version.r
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 hilt-gradle = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
