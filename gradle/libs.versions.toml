@@ -1,8 +1,8 @@
 [versions]
-androidGradlePlugin = "9.2.0"
+androidGradlePlugin = "9.2.1"
 androidxActivity = "1.13.0"
-androidxCompose = "1.11.0"
-androidxComposeMaterial3 = "1.5.0-alpha18"
+androidxCompose = "1.11.1"
+androidxComposeMaterial3 = "1.5.0-alpha19"
 androidxHilt = "1.3.0"
 androidxLifecycle = "2.10.0"
 androidxNavigation3 = "1.1.1"
