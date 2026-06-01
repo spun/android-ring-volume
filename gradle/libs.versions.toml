@@ -11,7 +11,7 @@ androidxTestExt = "1.3.0"
 hilt = "2.59.2"
 kotlin = "2.3.21"
 kotlinxSerialization = "1.11.0"
-ksp = "2.3.8"
+ksp = "2.3.9"
 
 [libraries]
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "androidxActivity" }
