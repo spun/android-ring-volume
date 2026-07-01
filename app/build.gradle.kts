@@ -89,7 +89,7 @@ dependencies {
     // to a version >= 2.11.0-beta02 (tested until the most recent v2.11.0)
     // TODO: Try removing this block and run the lint task again
     constraints {
-        implementation("androidx.concurrent:concurrent-futures:1.2.0")
+        implementation("androidx.concurrent:concurrent-futures:1.3.0")
     }
 
     // Activity
